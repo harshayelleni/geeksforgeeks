@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	//code
+	int t;cin>>t;
+	while(t--){
+	long int n;cin>>n;
+	long int c=1,m=0;;
+	while(n>0){
+	    n-=c;c++;//cout<<n<<" ";
+	    if(n>=0){m++;}
+	}
+	cout<<m<<endl;
+	}
+	return 0;
+}
