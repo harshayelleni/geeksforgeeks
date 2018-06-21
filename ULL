@@ -1,0 +1,16 @@
+#include <cmath>
+#include <iostream>
+ 
+int main()
+{
+    unsigned long long a = 1000ULL ;
+    unsigned long long b = 10ULL ;
+    auto res = std::pow( a, b ) ;
+    std::cout << std::fixed << res << '\n' ;
+ 
+    a = 10000000000ULL ;
+    b = 100000ULL ;
+    res = std::pow( a, b ) ;
+    if( res != HUGE_VAL ) std::cout << std::fixed << res << '\n' ;
+    else std::cout << "overflow\n" ;
+}
